@@ -1,3 +1,59 @@
-h1 {
+body {
   font-family: "Source Sans Pro", sans-serif;
+}
+
+:root {
+  font-size: 18px;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("../images/quentin-tarantino.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1400px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+
+header h1,
+h2,
+h3 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+header h3 {
+  padding-top: 220px;
+  letter-spacing: 5px;
+}
+header h1 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+}
+header h2 {
+  letter-spacing: 3px;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+
+header .learn-more {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 16px 32px;
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  border-radius: 10px;
+  transition: all 150ms ease-in-out;
+}
+
+header .learn-more:hover {
+  background: white;
+}
+
+footer {
+  text-align: center;
 }
