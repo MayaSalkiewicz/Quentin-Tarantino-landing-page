@@ -6,15 +6,30 @@ body {
   font-size: 18px;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
     url("../images/quentin-tarantino.png");
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1400px;
+
   text-align: center;
-  margin: 0 auto;
-  padding-bottom: 200px;
+
+  padding: 200px 0;
 }
 
 header h1,
@@ -24,17 +39,19 @@ h3 {
 }
 
 header h3 {
-  padding-top: 220px;
   letter-spacing: 5px;
+  line-height: 1.5;
 }
 header h1 {
   font-size: 3.5rem;
   letter-spacing: 2px;
+  line-height: 1;
 }
 header h2 {
   letter-spacing: 3px;
   font-weight: 300;
   padding-bottom: 30px;
+  line-height: 1.5;
 }
 
 header .learn-more {
@@ -55,5 +72,51 @@ header .learn-more:hover {
 }
 
 footer {
-  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/Tarantino-mural.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 25px;
+}
+
+footer ul {
+  color: white;
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  line-height: 1.5;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+footer p {
+  color: white;
+  opacity: 0.7;
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 80px 0;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  header h2 {
+    font-size: 1rem;
+  }
+  header h3 {
+    font-size: 0.8rem;
+  }
+  header .learn-more {
+    padding: 10px 8px;
+    font-size: 0.7rem;
+  }
+  footer {
+    font-size: 0.7rem;
+  }
 }
