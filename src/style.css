@@ -11,7 +11,7 @@ body {
   margin: 0 auto;
 }
 
-.grid {
+.grid-footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -26,15 +26,13 @@ header {
     url("../images/quentin-tarantino.png");
   background-repeat: no-repeat;
   background-size: cover;
-
   text-align: center;
-
   padding: 200px 0;
 }
 
 header h1,
-h2,
-h3 {
+header h2,
+header h3 {
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -71,12 +69,46 @@ header .learn-more:hover {
   background: white;
 }
 
+main {
+  margin: 100px 0;
+}
+
+.grid-two-columns {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 50px;
+}
+
+.first-section img {
+  max-width: 500px;
+}
+
+.first-section h3 {
+  margin: 0;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.first-section h2 {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.first-section p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../images/Tarantino-mural.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px 25px;
+  padding: 30px 0;
+}
+
+footer h3 {
+  color: white;
 }
 
 footer ul {
@@ -117,6 +149,29 @@ footer p {
     font-size: 0.7rem;
   }
   footer {
+    font-size: 0.7rem;
+    padding: 0 30px;
+  }
+
+  .grid-two-columns {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+  }
+
+  .first-section img {
+    max-width: 400px;
+  }
+
+  .first-section h3 {
+    font-size: 0.8rem;
+  }
+
+  .first-section h2 {
+    font-size: 0.9;
+  }
+
+  .first-section p {
     font-size: 0.7rem;
   }
 }
