@@ -253,6 +253,10 @@ main {
   opacity: 0.8;
 }
 
+.list-card li a {
+  color: brown;
+}
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../images/Tarantino-mural.png");
