@@ -189,6 +189,28 @@ main {
   background-color: rgba(212, 132, 132, 0.8);
 }
 
+.third-section {
+  padding: 70px 20px;
+}
+
+.third-section h2 {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.third-section .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  padding: 40px 20px;
+}
+
+.third-section .quote {
+  font-style: italic;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../images/Tarantino-mural.png");
@@ -276,6 +298,10 @@ footer p {
   }
 
   .grid-three-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .third-section .grid {
     grid-template-columns: 1fr;
   }
 }
