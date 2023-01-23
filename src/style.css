@@ -190,7 +190,7 @@ main {
 }
 
 .third-section {
-  padding: 70px 20px;
+  padding: 40px 20px;
 }
 
 .third-section h2 {
@@ -213,6 +213,7 @@ main {
 
 .fourth-section {
   padding: 40px 30px;
+  background-color: rgb(244, 244, 243);
 }
 
 .fourth-section h2 {
@@ -232,6 +233,7 @@ main {
   grid-template-columns: 1fr 7fr;
   border: 1px solid rgba(141, 136, 136, 0.4);
   border-radius: 15px;
+  background-color: white;
 }
 
 .list-card img {
