@@ -211,6 +211,46 @@ main {
   font-size: 0.9rem;
 }
 
+.fourth-section {
+  padding: 40px 30px;
+}
+
+.fourth-section h2 {
+  text-align: center;
+  margin-bottom: 80px;
+  letter-spacing: 3px;
+}
+
+.fourth-section .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.list-card .grid {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  border: 1px solid rgba(141, 136, 136, 0.4);
+  border-radius: 15px;
+}
+
+.list-card img {
+  width: 80px;
+  display: block;
+  border-radius: 15px;
+}
+
+.list-card ul {
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 0;
+}
+
+.list-card li {
+  list-style: none;
+  opacity: 0.8;
+}
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../images/Tarantino-mural.png");
@@ -303,5 +343,13 @@ footer p {
 
   .third-section .grid {
     grid-template-columns: 1fr;
+  }
+
+  .fourth-section .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .list-card .grid {
+    grid-template-columns: 1fr 4fr;
   }
 }
